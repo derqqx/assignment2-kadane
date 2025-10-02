@@ -76,9 +76,6 @@ public class PerformanceTracker {
                 endIndex;
     }
 
-    /**
-     * Утилита: если файл не существует — создаёт и пишет заголовок.
-     */
     public static void ensureCsvHeader(File csvFile) throws IOException {
         if (!csvFile.exists()) {
             try (FileWriter fw = new FileWriter(csvFile, false)) {
