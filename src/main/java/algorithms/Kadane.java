@@ -9,6 +9,7 @@ public class Kadane {
         return tracker;
     }
     //кадане
+    //второй кадане
     public long kadane(int[] arr) {
         if (arr == null || arr.length == 0) {
             throw new IllegalArgumentException("Array must not be null or empty");

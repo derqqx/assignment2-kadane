@@ -61,6 +61,7 @@ public class BenchmarkRunner {
         }
     }
 //бенч
+    //второй бенч
     private static int[] generateRandomArray(int n) {
         Random rand = new Random();
         int[] arr = new int[n];
