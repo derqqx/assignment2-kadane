@@ -31,7 +31,7 @@ class KadaneTest {
         Kadane kadane = new Kadane();
         assertThrows(IllegalArgumentException.class, () -> kadane.kadane(new int[]{}));
     }
-
+//тестовая
     @Test
     void testNullArray() {
         Kadane kadane = new Kadane();
