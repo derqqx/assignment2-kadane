@@ -1,5 +1,5 @@
 package metrics;
-
+//перфомарманс
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -61,10 +61,6 @@ public class PerformanceTracker {
     public int getStartIndex() { return startIndex; }
     public int getEndIndex() { return endIndex; }
 
-    /**
-     * CSV строка (без поля n). Формат:
-     * time_ns,comparisons,arrayAccesses,iterations,updates,result,start,end
-     */
     public String toCSV() {
         return getExecutionTime() + "," +
                 comparisons + "," +
@@ -76,9 +72,6 @@ public class PerformanceTracker {
                 endIndex;
     }
 
-    /**
-     * Утилита: если файл не существует — создаёт и пишет заголовок.
-     */
     public static void ensureCsvHeader(File csvFile) throws IOException {
         if (!csvFile.exists()) {
             try (FileWriter fw = new FileWriter(csvFile, false)) {
