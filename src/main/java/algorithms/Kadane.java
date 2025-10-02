@@ -17,13 +17,11 @@ public class Kadane {
 
         tracker.startMeasurement();
 
-        // Инициализация с первым элементом (учитываем доступ к arr[0])
         tracker.incArrayAccesses();
         long maxSoFar = arr[0];
         long maxEndingHere = arr[0];
         int start = 0, end = 0, tempStart = 0;
 
-        // Обновление счётчиков для начального состояния
         tracker.incUpdates();
 
         for (int i = 1; i < arr.length; i++) {
