@@ -8,11 +8,7 @@ public class Kadane {
     public PerformanceTracker getTracker() {
         return tracker;
     }
-
-    /**
-     * Возвращает максимальную сумму подмассива (и сохраняет индексы в tracker).
-     * Выбрасывает IllegalArgumentException для null или пустого массива.
-     */
+    //кадане
     public long kadane(int[] arr) {
         if (arr == null || arr.length == 0) {
             throw new IllegalArgumentException("Array must not be null or empty");
