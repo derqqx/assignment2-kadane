@@ -8,7 +8,7 @@ public class Kadane {
     public PerformanceTracker getTracker() {
         return tracker;
     }
-
+//тестовая
     public long kadane(int[] arr) {
         if (arr == null || arr.length == 0) {
             throw new IllegalArgumentException("Array must not be null or empty");
