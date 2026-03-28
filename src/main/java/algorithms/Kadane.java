@@ -8,8 +8,7 @@ public class Kadane {
     public PerformanceTracker getTracker() {
         return tracker;
     }
-    //кадане
-    //второй кадане
+//тестовая
     public long kadane(int[] arr) {
         if (arr == null || arr.length == 0) {
             throw new IllegalArgumentException("Array must not be null or empty");
@@ -26,8 +25,8 @@ public class Kadane {
 
         for (int i = 1; i < arr.length; i++) {
             tracker.incIterations();
-            tracker.incArrayAccesses(); // читать arr[i]
-            tracker.incComparisons();  // сравнение ниже
+            tracker.incArrayAccesses();
+            tracker.incComparisons();
 
             long candidate = maxEndingHere + arr[i];
 
